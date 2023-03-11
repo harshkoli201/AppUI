@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Hello1 extends StatelessWidget {
   const Hello1({Key? key}) : super(key: key);
@@ -19,8 +20,15 @@ class Hello1 extends StatelessWidget {
         elevation: 0,
         centerTitle: true,
         leading: Container(
-          decoration: BoxDecoration(
-            color: Colors.black,
+          margin: const EdgeInsets.all(10),
+          alignment: Alignment.center,
+          child: SvgPicture.asset(
+            'assest/icons/Arrow - Left 2.svg',
+            height: 20,
+            width: 20,
+          ),
+          decoration: const BoxDecoration(
+            color: Color(0xffF7F8F8),
           ),
         ),
       ),
